@@ -1,0 +1,38 @@
+# Dataset
+/data/
+
+# Models
+/models/
+
+# Training outputs
+/outputs/
+
+# Logs
+/logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.venv/
+
+# Ignore datasets
+/data/
+
+# Ignore models
+/models/
+
+# Ignore training outputs
+/outputs/
+
+# Ignore logs
+/logs/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
