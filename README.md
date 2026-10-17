@@ -2,7 +2,7 @@
 
 在单张 RTX 4090（24GB）上，用 QLoRA 对 Qwen2.5-7B-Instruct 做科研摘要和论文问答后训练。数据是 SciTLDR-AIC 与 QASPER 的官方划分。顺序是 SFT、DPO，再在 QASPER 上做 GRPO。
 
-指标、同一测试集对比、为什么选 GRPO，以及为什么把这份 adapter 合并成 BF16 模型，写在 [数据分析.md](数据分析.md)。原始数字在 `数据记录.md`。
+指标、同一测试集对比、为什么选 GRPO，以及为什么把这份 adapter 合并成 BF16 模型，写在 [数据分析文件](./数据分析.md)。原始数字在 `数据记录.md`。
 
 ## 安装环境
 
@@ -30,8 +30,6 @@ models/grpo_adapter/  GRPO LoRA
 outputs/              各阶段 metrics、predictions、checkpoint
 scripts/              下面列出的核心脚本
 ```
-
-`models/` 和 `outputs/` 里的权重不要提交到 GitHub。
 
 ## 训练时不要改的配置
 
